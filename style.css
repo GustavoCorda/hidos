@@ -1,0 +1,191 @@
+
+.metal-mania-regular {
+        font-family: "Metal Mania", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a0a0a0 ;
+}
+
+nav {
+    background-color: #000000;
+    color: #a0a0a0;
+    width: 99%;
+    align-self: flex-start;
+}
+
+.div-nav {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+ul {
+    margin: 0 10px 0 0;
+    padding: 5px 10px;
+    border: solid rgb(168, 195, 207) 1px;
+    text-align: center;
+}
+
+a {
+    color: #A0A0A0;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color:  #186B73;
+    color: #2C2C2C;
+}
+
+.carousel {
+    margin-top: 15px;
+}
+
+.img-carrusel {
+    width: 300px;
+    height: 250px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 850px;
+}
+
+section {
+    padding: 3px;
+    display: flex;
+    /* border: solid black 1px; */
+    width: 900px;
+    height: 450px;
+}
+
+h3 {
+    color: #2C2C2C;
+}
+
+.grande {
+    display: flex;
+    margin: 3px;
+    width: 75%;
+}
+
+.grande img {
+    width: 50%;
+    height: 100%;
+    border: solid 1px black;
+    border-radius: 8px;
+    margin: 2px 5px;
+}
+
+.grande2 {
+    display: flex;
+    margin: 3px;
+    width: 68%;
+}
+
+.grande2 img {
+    width: 33%;
+    height: 100%;
+    border: solid 1px black;
+    border-radius: 8px;
+    margin: 2px 5px;
+}
+
+.chico {
+    margin: 3px;
+    border-radius: 100%;
+    width: 25%;
+    height: 65%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    background-color: #2C2C2C;
+}
+
+div {
+    color: #A0A0A0;
+}
+
+.div-galeria {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section-galeria {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: auto;
+    margin: 10px auto 15px;
+}
+.div-galeria img {
+    display: flex;
+    width: 300px;
+    height: 280px;
+    margin: 1px 5px;
+    border: #000000 solid 1px;
+    border-radius: 8px;
+    flex-wrap: nowrap;
+}
+
+.mas {
+    margin: 5px auto;
+    font-size: smaller;
+    color: #2C2C2C;
+}
+
+footer {
+    width: 99%;
+    background-color: #000000;
+    text-align: left;
+}
+
+footer {
+    color: #A0A0A0;
+}
+
+footer li {
+    font-size:xx-small;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: flex-start;
+}
+
+footer ul {
+    border: none;
+}
+
+footer a {
+    color: #B04A00;
+}
