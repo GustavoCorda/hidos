@@ -27,6 +27,7 @@ nav {
     width: 100%;
     padding: 5px;
     display: flex;
+    justify-content: space-between;
     align-self: flex-start;
     align-items: flex-end;
 }
@@ -68,6 +69,75 @@ a:hover{
     width: 300px;
     height: 250px;
 }
+
+.img-edificio {
+    width:100vw;
+    height:auto;
+}
+
+.img-edificio img {
+    width: 100%;
+    height: 850px;
+    opacity: 0.6;
+}
+
+.img-edificio {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* .img-edificio img {
+    width: 100%;
+    height: auto;
+  }
+   */
+  /* Texto en la esquina superior izquierda */
+  .overlay-text.top-left {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+  transform: translateX(-50%); /* Solo centra horizontalmente */
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  /* Texto en el centro */
+  .overlay-text.center {
+    position: absolute;
+    top: 105px;
+    left: 50%;
+  transform: translateX(-50%); /* Solo centra horizontalmente */
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  /* Texto en la esquina inferior derecha */
+  .overlay-text.bottom-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    z-index: 1;
+    width:80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  
+  
 
 main {
     display: flex;
@@ -116,19 +186,15 @@ h3 {
     margin: 2px 5px;
 }
 
-.chico {
+/* .chico {
     margin: 3px;
     border-radius: 100%;
-    width: 25%;
-    height: 65%;
     margin: auto;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px black;
-    background-color: #2C2C2C;
-}
+} */
 
 div {
     color: #A0A0A0;
@@ -163,6 +229,33 @@ div {
     font-size: smaller;
     color: #2C2C2C;
 }
+
+
+/* ### BOTON FLOTANTE WHATSAPP ### */
+
+.whatsapp{
+    width: 45px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp img{
+    width: 100%;
+    background-color: rgb(216, 206, 187);
+    border-radius: 100px;
+}
+
+
+/* SECCION CONTACTO */
+.div-article {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.span-article {
+    color: #000000;
+}
+
 
 footer {
     width: 99%;
