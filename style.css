@@ -32,10 +32,32 @@ nav {
     align-items: flex-end;
 }
 
+nav ul a {
+    color: #A0A0A0; /* Color base */
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease; /* Para animaciones suaves */
+}
+
+nav ul a:hover {
+    background-color: #186B73; /* Verde azulado claro (hover) */
+    color: #2C2C2C; /* Texto oscuro */
+    border-radius: 5px; /* Opcional */
+}
+
+nav ul a.active {
+    color: #000000; /* Marrón claro (texto activo) */
+    background-color: #ffffff; /* Verde azulado más oscuro */
+    border-radius: 2px;   
+    font-weight: bold; /* Para enfatizar */
+}
+
+
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 81px;
     margin-right: 1rem;
+    /* background-color: white; */
 }
 
 li {
