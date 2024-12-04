@@ -251,14 +251,15 @@ footer a {
     color: #B04A00;
 }
 
-.whatsapp {
+.whatsapp{
+    width: 45px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 100;
 }
 
-.whatsapp img {
-    width: 80px;
-    height: 80px;
+.whatsapp img{
+    width: 100%;
+    background-color: rgb(216, 206, 187);
+    border-radius: 100px;
 }
