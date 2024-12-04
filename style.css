@@ -1,3 +1,4 @@
+/* Fuentes */
 .metal-mania-regular {
     font-family: "Metal Mania", system-ui;
     font-weight: 400;
@@ -15,6 +16,7 @@ body {
     background-color: #a0a0a0;
 }
 
+/* Navegación */
 nav {
     background-color: #000000;
     color: #a0a0a0;
@@ -31,24 +33,25 @@ nav {
     align-items: flex-end;
 }
 
+/* Estilos para los enlaces del menú */
 nav ul a {
-    color: #A0A0A0;
+    color: #A0A0A0; /* Color base */
     text-decoration: none;
     padding: 5px 10px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Para animaciones suaves */
 }
 
 nav ul a:hover {
-    background-color: #186B73;
-    color: #2C2C2C;
-    border-radius: 5px;
+    background-color: #186B73; /* Verde azulado claro (hover) */
+    color: #2C2C2C; /* Texto oscuro */
+    border-radius: 5px; /* Opcional */
 }
 
 nav ul a.active {
-    color: #000000;
-    background-color: #ffffff;
+    color: #000000; /* Marrón claro (texto activo) */
+    background-color: #ffffff; /* Verde azulado más oscuro */
     border-radius: 2px;   
-    font-weight: bold;
+    font-weight: bold; /* Para enfatizar */
 }
 
 .logo {
@@ -76,11 +79,12 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     background-color: #186B73;
     color: #2C2C2C;
 }
 
+/* Carrusel */
 .carousel {
     margin-top: 15px;
 }
@@ -90,9 +94,10 @@ a:hover{
     height: 250px;
 }
 
+/* Imagen de edificio */
 .img-edificio {
-    width:100vw;
-    height:auto;
+    width: 100vw;
+    height: auto;
 }
 
 .img-edificio img {
@@ -106,11 +111,12 @@ a:hover{
     display: inline-block;
 }
 
+/* Overlay en las imágenes */
 .overlay-text.top-left {
     position: absolute;
     top: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Solo centra horizontalmente */
     color: white;
     font-size: 1.2rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -123,7 +129,7 @@ a:hover{
     position: absolute;
     top: 105px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Solo centra horizontalmente */
     color: white;
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -142,12 +148,13 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     z-index: 1;
-    width:80%;
+    width: 80%;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
 }
 
+/* Estilo del cuerpo principal */
 main {
     display: flex;
     flex-direction: column;
@@ -155,6 +162,7 @@ main {
     height: 850px;
 }
 
+/* Sección principal */
 section {
     padding: 3px;
     display: flex;
@@ -166,6 +174,7 @@ h3 {
     color: #2C2C2C;
 }
 
+/* Estilo de las imágenes grandes */
 .grande {
     display: flex;
     margin: 3px;
@@ -180,6 +189,7 @@ h3 {
     margin: 2px 5px;
 }
 
+/* Estilo para dos imágenes grandes */
 .grande2 {
     display: flex;
     margin: 3px;
@@ -198,6 +208,7 @@ div {
     color: #A0A0A0;
 }
 
+/* Galería de imágenes */
 .div-galeria {
     display: flex;
     flex-wrap: wrap;
@@ -225,18 +236,40 @@ div {
     transform: scale(1.05);
 }
 
+/* Botón flotante WhatsApp */
+.whatsapp {
+    width: 45px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp img {
+    width: 100%;
+    background-color: rgb(216, 206, 187);
+    border-radius: 100px;
+}
+
+/* Sección de contacto */
+.div-article {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.span-article {
+    color: #000000;
+}
+
+/* Estilo del pie de página */
 footer {
     width: 99%;
     background-color: #000000;
     text-align: left;
-}
-
-footer {
     color: #A0A0A0;
 }
 
 footer li {
-    font-size:xx-small;
+    font-size: xx-small;
     display: flex;
     flex-direction: column;
     border: none;
@@ -249,17 +282,4 @@ footer ul {
 
 footer a {
     color: #B04A00;
-}
-
-.whatsapp{
-    width: 45px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
-.whatsapp img{
-    width: 100%;
-    background-color: rgb(216, 206, 187);
-    border-radius: 100px;
 }
