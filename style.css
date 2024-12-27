@@ -33,24 +33,25 @@ nav {
     align-items: flex-end;
 }
 
+/* Estilos para los enlaces del menú */
 nav ul a {
-    color: #A0A0A0;
+    color: #A0A0A0; /* Color base */
     text-decoration: none;
     padding: 5px 10px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Para animaciones suaves */
 }
 
 nav ul a:hover {
-    background-color: #186B73;
-    color: #2C2C2C;
-    border-radius: 5px;
+    background-color: #186B73; /* Verde azulado claro (hover) */
+    color: #2C2C2C; /* Texto oscuro */
+    border-radius: 5px; /* Opcional */
 }
 
 nav ul a.active {
-    color: #000000;
-    background-color: #ffffff;
-    border-radius: 2px;
-    font-weight: bold;
+    color: #000000; /* Marrón claro (texto activo) */
+    background-color: #ffffff; /* Verde azulado más oscuro */
+    border-radius: 2px;   
+    font-weight: bold; /* Para enfatizar */
 }
 
 .logo {
@@ -112,38 +113,46 @@ a:hover {
 }
 
 /* Overlay en las imágenes */
-.overlay-text.top-left, .overlay-text.center, .overlay-text.bottom-right {
-    position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 5px;
-    z-index: 1;
-}
-
 .overlay-text.top-left {
+    position: absolute;
     top: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Solo centra horizontalmente */
+    color: white;
     font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    z-index: 1;
+    border-radius: 5px;
 }
 
 .overlay-text.center {
+    position: absolute;
     top: 105px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Solo centra horizontalmente */
+    color: white;
     font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
+    z-index: 1;
+    border-radius: 5px;
 }
 
 .overlay-text.bottom-right {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
     font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    z-index: 1;
     width: 80%;
     padding: 20px;
     text-align: center;
+    border-radius: 5px;
 }
 
 /* Estilo del cuerpo principal */
@@ -167,12 +176,13 @@ h3 {
 }
 
 /* Estilo de las imágenes grandes */
-.grande, .grande2 {
+.grande {
     display: flex;
     margin: 3px;
+    width: 75%;
 }
 
-.grande img, .grande2 img {
+.grande img {
     width: 50%;
     height: 100%;
     border: solid 1px black;
@@ -180,7 +190,33 @@ h3 {
     margin: 2px 5px;
 }
 
+/* Estilo para dos imágenes grandes */
+.grande2 {
+    display: flex;
+    margin: 3px;
+    width: 68%;
+}
+
+.grande2 img {
+    width: 33%;
+    height: 100%;
+    border: solid 1px black;
+    border-radius: 8px;
+    margin: 2px 5px;
+}
+
+div {
+    color: #A0A0A0;
+}
+
 /* Galería de imágenes */
+/* .div-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+} */
+
 .div-galeria {
     display: flex;
     flex-wrap: wrap;
@@ -192,12 +228,22 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 98%;
+    height: auto;
     margin: 10px auto 15px;
 }
 
-.div-galeria img {
+/* .div-galeria img {
     max-width: 500px;
     max-height: 300px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+} */
+
+.div-galeria img {
+    width: 100%; /* Las imágenes tomarán el 100% del ancho del contenedor */
+    max-width: 500px; /* Asegura que las imágenes no sean más grandes que 500px */
+    height: auto; /* Mantiene la relación de aspecto */
     margin: 10px;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -255,12 +301,15 @@ footer a {
     color: #B04A00;
 }
 
+
 /* Adaptación para pantallas pequeñas (celulares) */
 @media (max-width: 768px) {
+    /* General */
     body {
         font-size: 0.9rem;
     }
 
+    /* Navegación */
     nav {
         width: 100%;
         padding: 10px;
@@ -280,21 +329,34 @@ footer a {
         height: 80px;
     }
 
+    /* Imágenes de la galería */
     .div-galeria img {
         max-width: 100%;
         margin: 5px;
     }
 
-    .grande, .grande2 {
+    /* Imágenes de la sección principal */
+    .grande {
         width: 100%;
         flex-direction: column;
     }
 
-    .grande img, .grande2 img {
+    .grande img {
         width: 100%;
         height: auto;
     }
 
+    .grande2 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .grande2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Carrusel */
     .carousel-inner {
         padding: 0 10px;
     }
@@ -304,6 +366,7 @@ footer a {
         height: auto;
     }
 
+    /* Footer */
     footer {
         text-align: center;
         padding: 20px 0;
@@ -321,6 +384,45 @@ footer a {
 
 /* Adaptación para pantallas extra pequeñas (celulares en modo vertical) */
 @media (max-width: 480px) {
+    .overlay-text.top-left {
+        font-size: 1rem;
+        top: 30px;
+    }
+
+    .overlay-text.center {
+        font-size: 1.5rem;
+        top: 80px;
+    }
+
+    .overlay-text.bottom-right {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .img-edificio img {
+        height: 600px;
+    }
+
+    .whatsapp {
+        width: 40px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .div-galeria img {
+        width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+        max-width: 100%; /* Elimina el límite de 500px en pantallas pequeñas */
+        margin: 5px 0; /* Reduce los márgenes en dispositivos pequeños */
+    }
+}
+
+@media (max-width: 480px) {
+
+    
+
+
     /* .overlay-text.top-left {
         font-size: 1rem;
         top: 30px;
