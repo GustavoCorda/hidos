@@ -56,8 +56,9 @@ nav ul a.active {
 
 .logo {
     width: 140px;
-    height: 81px;
+    height: 95px;
     margin-right: 1rem;
+    background-color: #000000;
 }
 
 li {

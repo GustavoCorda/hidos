@@ -30,20 +30,60 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Asegurarse de que el modal se cierra correctamente y se elimina el backdrop
-    const closeButton = document.querySelector('.btn-close');
-    closeButton.addEventListener('click', () => {
-        const modal = new bootstrap.Modal(document.getElementById('imageModal'));
-        modal.hide(); // Cerrar el modal explícitamente
-    });
-
-    // Escuchar el evento de cierre del modal para eliminar el backdrop
+    // Escuchar el evento de cierre del modal
     const imageModal = document.getElementById('imageModal');
     imageModal.addEventListener('hidden.bs.modal', () => {
-        // Esto asegura que el backdrop sea eliminado después de que el modal se cierre
+        // Asegurarse de que el backdrop sea eliminado
         const backdrop = document.querySelector('.modal-backdrop');
         if (backdrop) {
             backdrop.remove(); // Eliminar el backdrop manualmente
         }
+
+        // Asegurarse de que la clase modal-open sea eliminada del body
+        document.body.classList.remove('modal-open');
+
+        // Reestablecer el overflow del body para mostrar la barra de desplazamiento
+        document.body.style.overflow = '';
     });
 });
+
+
+const galleryContainer = document.getElementById('gallery-container');
+
+        for (let i = 1; i <= 122; i++) {
+            const imgElement = document.createElement('img');
+            imgElement.src = `./assets/galeria particulares/particulares (${i}).jpg`;
+            imgElement.alt = `Imagen ${i}`;
+            imgElement.className = 'gallery-img';
+            imgElement.setAttribute('data-bs-toggle', 'modal');
+            imgElement.setAttribute('data-bs-target', '#imageModal');
+            galleryContainer.appendChild(imgElement);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Seleccionar el contenedor de la galería
+            const galleryContainer2 = document.getElementById('gallery-container2');
+            
+            // Verificar que exista el contenedor antes de intentar llenarlo
+            if (galleryContainer2) {
+                for (let i = 1; i <= 9; i++) {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = `./assets/galeria rampa/rampa (${i}).jpg`;
+                    imgElement.alt = `Imagen ${i}`;
+                    imgElement.className = 'gallery-img';
+                    imgElement.setAttribute('data-bs-toggle', 'modal');
+                    imgElement.setAttribute('data-bs-target', '#imageModal');
+                    galleryContainer2.appendChild(imgElement);
+                }
+            }
+        
+            // Agregar evento para abrir modal al hacer clic en una imagen
+            document.addEventListener('click', (event) => {
+                if (event.target.classList.contains('gallery-img')) {
+                    const imageUrl = event.target.src;
+                    const modalImage = document.getElementById('modalImage');
+                    modalImage.src = imageUrl;
+                }
+            });
+        });
+        

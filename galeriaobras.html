@@ -12,34 +12,63 @@
     <title>Hidos</title>
 </head>
 <body>
-    <h1 class="metal-mania-regular">Hidos</h1>
-    <h2 class="metal-mania-regular">Herrería de obras</h2>
+    <img class="logo" src="./assets/blanco - fondo transparente.png" alt="">
+    <h2 style="color: black;" class="metal-mania-regular">Herrería de obras</h2>
     <nav>
-        <div class="div-nav">
-           <img class="logo" src="./assets/blanco - fondo transparente.png" alt="">
-           <li>
-              <ul><a href="./index.html">Inicio</a> </ul>
-              <ul><a href="./galeria.html">Galería Particulares</a></ul>
-              <ul><a href="./galeriaobras.html">Galería Obras</a></ul>
-              <ul><a href="./galeriarampas.html">Galería Rampas</a></ul>
-             <ul><a href="./contacto.html">Contacto</a> </ul>
-           </li>
-        </div>
-   </nav>
+         <div class="div-nav">
+            
+            <li>
+               <ul><a href="./index.html">Inicio</a> </ul>
+               <ul><a href="./galeria.html">Galería Particulares</a></ul>
+               <ul><a href="./galeriaobras.html">Galería Obras</a></ul>
+               <ul><a href="./galeriarampas.html">Galería Rampas</a></ul>
+              <ul><a href="./contacto.html">Contacto</a> </ul>
+            </li>
+         </div>
+    </nav>
 <br>
-    <h2 class="metal-mania-regular">Contacto</h3>
 
         <div class="whatsapp">
             <a target="_blank" href="https://wa.me/5493415722656"><img src="./assets/logo whatsapp.png" alt="">
             </a>
         </div>
 
+        <h2 class="metal-mania-regular">Galería de obras</h2>
+        <section class="section-galeria">
+            <div class="div-galeria">
+                <img src="./assets/" alt="Imagen 1" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+                 </div>
+        </section>
+    
+        <!-- Modal -->
+        <div class="modal" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- Botón de cerrar del modal usando Bootstrap -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                    </div>
+                    <div class="modal-body">
+                        <!-- Imagen del modal que se actualizará dinámicamente -->
+                        <img id="modalImage" src="" alt="Imagen ampliada" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+    
+        <div class="whatsapp">
+            <a target="_blank" href="https://wa.me/5493415722656"><img src="./assets/logo whatsapp.png" alt=""></a>
+        </div>
+
         
         <footer> 
             <li>
-                <ul>Todos los derechos reservados HIDOS &#174; </ul>
-                <!-- <ul><a href="">Contacto</a></ul>
-                <ul><a href="">Condiciones</a></ul> -->
+                <ul>Todos los derechos reservados HIDOS &#169; </ul>
+                <ul><a href="">Contacto</a></ul>
+                <ul><a href="">Condiciones</a></ul>
             </li>
         </footer>
         <script src="app.js"></script>
